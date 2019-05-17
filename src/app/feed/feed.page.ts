@@ -6,12 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feed.page.scss'],
 })
 export class FeedPage implements OnInit {
+  public nome_usuario:string = "Felipe Freitas";
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { //código do que acontece na página
+    this.feedselect();
   }
+
+  //Funçãoes relativas à página
   feedselect(){
-    console.log('Eu estou aqui');
+    alert("ROdou");
   }
 }

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
-//import { FeedPageModule } from '../feed/feed.module';
 const routes: Routes = [
   {
     path: 'tabs',
@@ -34,7 +33,7 @@ const routes: Routes = [
           }
         ]
       },
-     /* {
+      {
         path: 'feed',
         children: [
           {
@@ -42,7 +41,7 @@ const routes: Routes = [
             loadChildren: '../feed/feed.module#FeedPageModule'
           }
         ]
-      },*/
+      },
       {
         path: '',
         redirectTo: '/tabs/tab1',
