@@ -43,15 +43,24 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'intro',
+        children: [
+          {
+            path: '',
+            loadChildren: '../intro/intro.module#IntroPageModule'
+          }
+        ]
+      },
+      {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/intro',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/intro',
     pathMatch: 'full'
   }
 ];
