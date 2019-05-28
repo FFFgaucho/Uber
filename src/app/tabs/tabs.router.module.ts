@@ -53,14 +53,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/intro',
+        redirectTo: '/tabs/feed',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/intro',
+    redirectTo: '/tabs/feed',
     pathMatch: 'full'
   }
 ];
