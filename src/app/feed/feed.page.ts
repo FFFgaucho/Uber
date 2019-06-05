@@ -35,7 +35,5 @@ export class FeedPage implements OnInit {
   feedselect(){
     alert("ROdou");
   }
-  go() {
-    this.router.navigateByUrl('/animals');
-  }
+  
 }
