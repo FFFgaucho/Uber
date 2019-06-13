@@ -10,6 +10,6 @@ export class MoooovieService {
 
   }
   getLatestMovies(){
-    return this.http.get("https://api.themoviedb.org/3/movie/76341?api_key=8534a98ab60ad65e84061b04220ce97b")
+    return this.http.get("https://api.themoviedb.org/3/movie/popular?api_key=8534a98ab60ad65e84061b04220ce97b")
   }
 }

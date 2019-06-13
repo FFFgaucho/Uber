@@ -12,25 +12,26 @@ import { MoooovieService } from '../moooovie.service';
 })
 export class FeedPage implements OnInit {
   public nome_usuario:string = "Felipe Freitas";
+  public lista_filmes = new Array<any>();
 
   constructor(
     private router: Router,
     private testProvider: MoooovieService) { }
 
   ngOnInit() { //código do que acontece na página quando chama
-    this.feedselect();
+    //this.feedselect();
     this.testProvider.getLatestMovies().subscribe(
         data=>{
-          console.log(data);
+          const response = (data as any);
+          const objeto_retorno = JSON.parse(response._body);
+          this.lista_filmes = objeto_retorno.results;
+          console.log(objeto_retorno.results);
         },
         error=>{
           console.log(error);
         }
     ) 
-
-
   }
-
   //Funçãoes relativas à página
   feedselect(){
     alert("ROdou");
