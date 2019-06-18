@@ -11,9 +11,10 @@ import { AppComponent } from './app.component';
 import { FeedPageModule } from './feed/feed.module';
 import { IntroPageModule } from './intro/intro.module';
 import {HttpModule} from '@angular/http';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, SearchPipe],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FeedPageModule, IntroPageModule, HttpModule],
   providers: [
