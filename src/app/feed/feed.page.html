@@ -34,8 +34,20 @@
       This is content, without any paragraph or header tags,
       within an ion-card-content element.
     </ion-card-content>
-  </ion-card> -->
+  </ion-card> 
   <ion-searchbar [(ngModel)]="terms"></ion-searchbar>
+-->
+  <ion-searchbar (placeholder)="Digita" [(ngModel)]="searchTerm" (ionChange)="setFilteredItems()"></ion-searchbar>
+  
+  <ion-item *ngFor="let item of items">
+    {{ item.title }}
+  </ion-item>
+
+
+
+
+
+
   <ion-card *ngFor="let filme of lista_filmes">
     <ion-item>
       <ion-avatar item-start>

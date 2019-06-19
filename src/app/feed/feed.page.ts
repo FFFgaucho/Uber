@@ -12,7 +12,12 @@ import { MoooovieService } from '../moooovie.service';
 })
 export class FeedPage implements OnInit {
   public nome_usuario:string = "Felipe Freitas";
+  
   public lista_filmes = new Array<any>();
+  
+  public searchTerm: string = "";
+  public items: any;
+  
   public obj: any;
   public result: any;
 
@@ -22,6 +27,10 @@ export class FeedPage implements OnInit {
 
   ngOnInit() { //código do que acontece na página quando chama
     //this.feedselect();
+    
+    this.setFilteredItems();
+    
+    
     this.testProvider.getLatestMovies().subscribe(
         data=>{
           const response = (data as any);
@@ -32,21 +41,48 @@ export class FeedPage implements OnInit {
         error=>{
           console.log(error);
         }
-    ) 
-    
-        
+    )   
   }
+  setFilteredItems() {
+    this.items = this.testProvider.filterItems(this.searchTerm);
+  }
+  
+  
+  
+  
+  
+  
   //Funçãoes relativas à página
-  feedselect(){
+  feedSelect(){
     alert("ROdou");
   }
-  /*getAll() {
+
+/*
+
+  getTopics(ev: any) {
+    let serVal = ev.target.value;
+    if (serVal && serVal.trim() != '') {
+      this.lista_filmes.original_title = this.lista_filmes.filter((filme.original_title) => {
+        return (filme.toLowerCase().indexOf(serVal.toLowerCase()) > -1);
+      })
+    }
+  }
+
+
+
+
+
+
+
+
+
+  getAll() {
     this.testProvider.getLatestMovies()
       .subscribe(data => {
         this.obj = data;
         this.result = this.obj._embedded.episodes;
       });
-  }*/
+  }
   loadListaFIlmes(){
     let loading = this._loadingCtrl.create({
       content: 'Aguarde o carregamento das peças de roupas...'
@@ -54,13 +90,6 @@ export class FeedPage implements OnInit {
 
 
   }
-
-
-
-
-
-
-
   filterItems(ev: any) {
     this.loadListaFilmes();
     let val = ev.target.value;
@@ -70,5 +99,5 @@ export class FeedPage implements OnInit {
     this.pecasroupas.filter(function(item) {
       return item.toLowerCase().includes(val.toLowerCase());   
     });
-  }
+  }*/
 }

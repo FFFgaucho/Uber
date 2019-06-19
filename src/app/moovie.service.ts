@@ -7,9 +7,10 @@ import { Http } from '@angular/http';
 export class MoovieService {
 
   constructor(public http:Http) { 
-    console.log("Hello provider")
+
   }
   getLatestMovies(){
     this.http.get("http://")
   }
 }
+  
