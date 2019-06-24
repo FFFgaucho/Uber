@@ -44,7 +44,15 @@ export class FeedPage implements OnInit {
     )   
   }
   setFilteredItems() {
-    this.items = this.testProvider.filterItems(this.searchTerm);
+    console.log(this.searchTerm);
+    if(this.searchTerm==""){
+      console.log("NUloooo");
+      this.items = null;
+    }
+    else
+      this.items = this.testProvider.filterItems(this.searchTerm);
+      console.log("Valorrr");
+
   }
   
   

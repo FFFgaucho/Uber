@@ -37,10 +37,11 @@
   </ion-card> 
   <ion-searchbar [(ngModel)]="terms"></ion-searchbar>
 -->
-  <ion-searchbar (placeholder)="Digita" [(ngModel)]="searchTerm" (ionChange)="setFilteredItems()"></ion-searchbar>
+  <ion-searchbar placeholder="Digita aiiii" [(ngModel)]="searchTerm" (ionChange)="setFilteredItems()"></ion-searchbar>
   
   <ion-item *ngFor="let item of items">
-    {{ item.title }}
+     {{ item.title }} 
+    
   </ion-item>
 
 
