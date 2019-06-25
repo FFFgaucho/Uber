@@ -1,65 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Feed</ion-title>
+    <ion-title text-align:center>Feed de Notícias</ion-title>
   </ion-toolbar>
 </ion-header>
 <!--angular enxerga as duas chaves como um conteúdo a ser executados-->
 <ion-content padding>
-  
-  
-  <!-- <h2 class = "Usuario">
-    {{nome_usuario}} 
-  </h2>
-  <img src="../../assets/images/game.png">
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
-  
-  <ion-card>
-    <ion-item>
-      <ion-avatar item-start>
-          <img src="../../assets/images/game.png">
-      </ion-avatar>
-    </ion-item>
-  
-    <ion-card-content>
-      This is content, without any paragraph or header tags,
-      within an ion-card-content element.
-    </ion-card-content>
-  </ion-card> 
-  <ion-searchbar [(ngModel)]="terms"></ion-searchbar>
--->
+
   <ion-searchbar placeholder="Digita aiiii" [(ngModel)]="searchTerm" (ionChange)="filtro()"></ion-searchbar>
-  
-   <!-- <ion-item *ngFor="let item of items">
-      {{ item.title }}  
-    
-  </ion-item>  -->
-
-
-
-
-
 
   <ion-card *ngFor="let filme of lista_filmes">
     <ion-item>
       <ion-avatar item-start>
           <img src="../../assets/images/game.png">
       </ion-avatar>
-    
-      <h2> {{filme.original_title}}</h2>
-
-
-     
-      <p > {{filme.release_date}}</p>
+      <ion-grid>
+        <ion-row weight=0.0000005p>
+          <h2> {{filme.original_title}}</h2>
+        </ion-row>
+            {{filme.release_date}} 
+      </ion-grid>
     
     </ion-item> 
     <ion-card-content>
