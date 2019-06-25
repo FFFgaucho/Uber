@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ɵConsole } from '@angular/core';
 import { Router } from '@angular/router';
 import { MoooovieService } from '../moooovie.service';
 
@@ -14,6 +14,8 @@ export class FeedPage implements OnInit {
   public nome_usuario:string = "Felipe Freitas";
   
   public lista_filmes = new Array<any>();
+  public lista_temp = new Array<any>();
+  public i: number = 0;
   
   public searchTerm: string = "";
   public items: any;
@@ -25,87 +27,39 @@ export class FeedPage implements OnInit {
     private router: Router,
     private testProvider: MoooovieService) { }
 
-  ngOnInit() { //código do que acontece na página quando chama
-    //this.feedselect();
-    
-    this.setFilteredItems();
-    
-    
-    this.testProvider.getLatestMovies().subscribe(
-        data=>{
-          const response = (data as any);
-          const objeto_retorno = JSON.parse(response._body);
-          this.lista_filmes = objeto_retorno.results;
-          console.log(objeto_retorno.results);
-        },
-        error=>{
-          console.log(error);
-        }
-    )   
+  ngOnInit() { //código do que acontece na página quando chama 
+    //this.setFilteredItems();
+    //this.getFilmes();
+    this.filtro();
   }
+
   setFilteredItems() {
-    console.log(this.searchTerm);
+    /*console.log(this.searchTerm);
     if(this.searchTerm==""){
       console.log("NUloooo");
       this.items = null;
     }
-    else
+    else*/
       this.items = this.testProvider.filterItems(this.searchTerm);
       console.log("Valorrr");
 
-  }
-  
-  
-  
-  
-  
-  
+  }/*
   //Funçãoes relativas à página
   feedSelect(){
     alert("ROdou");
   }
-
-/*
-
-  getTopics(ev: any) {
-    let serVal = ev.target.value;
-    if (serVal && serVal.trim() != '') {
-      this.lista_filmes.original_title = this.lista_filmes.filter((filme.original_title) => {
-        return (filme.toLowerCase().indexOf(serVal.toLowerCase()) > -1);
-      })
-    }
+  //getFilmes(){ //inicializa o lista filme
+  //  ); 
+  //}*/
+  filtro(){
+    /*if(this.searchTerm==""){
+      this.lista_filmes=this.lista_temp;
+      this.i=this.i+1;
+      console.log(this.i);
+    }    
+    else*/
+    this.lista_filmes=this.testProvider.filterFilmes(this.searchTerm);  
+      
   }
-
-
-
-
-
-
-
-
-
-  getAll() {
-    this.testProvider.getLatestMovies()
-      .subscribe(data => {
-        this.obj = data;
-        this.result = this.obj._embedded.episodes;
-      });
-  }
-  loadListaFIlmes(){
-    let loading = this._loadingCtrl.create({
-      content: 'Aguarde o carregamento das peças de roupas...'
-    });
-
-
-  }
-  filterItems(ev: any) {
-    this.loadListaFilmes();
-    let val = ev.target.value;
-
-    console.log(this.pecasroupas);
-
-    this.pecasroupas.filter(function(item) {
-      return item.toLowerCase().includes(val.toLowerCase());   
-    });
-  }*/
+  
 }
