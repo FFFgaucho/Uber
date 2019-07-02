@@ -16,32 +16,35 @@ export class FeedPage implements OnInit {
   public lista_filmes = new Array<any>();
   public searchTerm: string = "";
   public resp: any;
+  //public p1: ;
+
+
 
   constructor(
     private router: Router,
-    private testProvider: MoooovieService) { }
+    private testProvider: MoooovieService) {
+      /*this.p1 = new Promise(function(resolve, reject) {
+        resolve("Success!");
+        // */  
+     }
 
   ngOnInit() { //código do que acontece na página quando chama 
     this.getMovies();
   }
 
-  getMovies(){
-    this.resp = this.testProvider.getApi();
-    this.resp.subscribe(
-      data=>{
-        const response = (data as any);
-        const objeto_retorno = JSON.parse(response._body);
-        this.lista_filmes = objeto_retorno.results;
-        //cópia para provider
-        this.testProvider.setListaFilmes(this.lista_filmes);
-      },
-      error=>{
-        console.log(error);
-      }
-    ); 
+  async getMovies(){
+    console.log("código ts");
+    
+    this.lista_filmes= await this.testProvider.getApi();
+
+    console.log(this.lista_filmes);
+
   }
 
-  filtro(){
-    this.lista_filmes=this.testProvider.filterFilmes(this.searchTerm);       
+  async filtro(){
+    if(this.searchTerm ==""){
+
+    }
+    this.lista_filmes= await this.testProvider.filterFilmes(this.searchTerm);       
   }
 }
