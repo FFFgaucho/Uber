@@ -1,9 +1,27 @@
 <ion-header>
+  
   <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back" size="large"></ion-icon>
+      <ion-label>Dados Pessoais</ion-label>
+     <!-- <h2 class="Cabeça">Dados Pessoais</h2>
     <ion-title>
-      Tab Three
+      <h2 class="Cabeça">Dados pessoais</h2>
     </ion-title>
+    -->
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content >
+  <ion-list>
+    <ion-item >
+      <ion-col>
+        <ion-row>
+          <h1 class="subtitle">Nome</h1>
+        </ion-row>
+        <ion-row>
+          <ion-input placeholder="Meu Nome" type="text" #name></ion-input>
+        </ion-row>
+      </ion-col>
+    </ion-item>
+  </ion-list>
+</ion-content>

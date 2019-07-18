@@ -1,1 +1,38 @@
-
+ion-content {
+    --ion-background-color: rgb(102, 46, 146);
+}
+ion-header{
+    --ion-background-color:rgb(250, 238, 2);
+}
+h2, Cabeça {
+    color: rgb(102, 46, 146);
+    margin-left:6%;
+}
+h1, subtitle {
+    color:white;
+    font-size: 80%;
+}
+ion-icon{
+    margin-left: 5%;
+    color: rgb(102, 46, 146);
+}
+ion-label{
+    color: rgb(102, 46, 146);
+    margin-left:4%;
+}
+ion-input{
+    --placeholder-color: rgb(250, 238, 2);	
+}
+ion-input{
+    --placeholder-color: rgb(250, 238, 2);
+    --placeholder-font-weight: 40px;
+    --padding-top: 0%;
+    --padding-bottom: 1%;
+    --color: rgb(250, 238, 2);	
+}
+ion-item{
+    --highlight-color-focused: white;
+    --highlight-background:green;
+    --text-input-md-highlight-color:blue;
+    --border-color: white;
+}
