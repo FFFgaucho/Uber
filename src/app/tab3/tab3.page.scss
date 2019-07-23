@@ -1,27 +1,34 @@
 ion-content {
     --ion-background-color: rgb(102, 46, 146);
+   /* --ion-margin-left:20%;
+    --margin-left:20%;
+    --ion-margin-left:100%;
+    --padding-bottom:30%;*/
 }
 ion-header{
     --ion-background-color:rgb(250, 238, 2);
 }
-h2, Cabeça {
-    color: rgb(102, 46, 146);
-    margin-left:6%;
+ion-toolbar{
+    margin-left:0%;
+    height: 135%;
+}
+h2, Outro {
+    color: rgb(250, 238, 2);
+    font-size: 80%;
+    padding-bottom: 5%;
 }
 h1, subtitle {
     color:white;
     font-size: 80%;
+    //margin-left:6%;
 }
 ion-icon{
-    margin-left: 5%;
-    color: rgb(102, 46, 146);
+    margin-left: 4%;
+    color: black;
 }
 ion-label{
     color: rgb(102, 46, 146);
     margin-left:4%;
-}
-ion-input{
-    --placeholder-color: rgb(250, 238, 2);	
 }
 ion-input{
     --placeholder-color: rgb(250, 238, 2);
@@ -31,8 +38,27 @@ ion-input{
     --color: rgb(250, 238, 2);	
 }
 ion-item{
-    --highlight-color-focused: white;
-    --highlight-background:green;
-    --text-input-md-highlight-color:blue;
+    //--highlight-color-focused: white;
+    --highlight-background:white;
+    //--text-input-md-highlight-color:blue;
     --border-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+ion-img{
+    width: 27%;
+    margin-left: 8%;
+    padding-top: 2%;
+}
+ion-button{
+    padding-top: 2%;
+    margin-left: 4%;
+    --border-color: green;
+    margin-top: 19.1%;
+}
+ion-row{
+    padding-top: 0%;
+}
+ion-col{
+    padding-top: 1%;
 }

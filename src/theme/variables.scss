@@ -79,14 +79,19 @@
   --ion-background-color: white;
 
   /**Margin **/
-  --ion-margin-left:10%;
+  //--ion-margin-left:100%;
+  //--ion-padding:30%;
+
 
   /*for placeholder**/
   --text-input-highlight-color-valid:yellow;
   --text-input-highlight-color-invalid:pink;
   --ion-input-highlight-color-focused: red;
-  --input-highlight-color:green;
+  //--input-highlight-color:green;
   --text-input-md-highlight-color:blue;
-  --ion-input-border-bottom: 5000px;
-  --ion-input-highlight-border-bottom: 10000px;
+  --ion-padding-bottom:40%;
+
+  --ion-button-border-color:green;
+  //--ion-input-border-bottom: 5000px;
+  //--ion-input-highlight-border-bottom: 10000px;
 }
