@@ -21,20 +21,53 @@
     <ion-button size="large" fill="outline">
       <h2 style="color:rgb(250, 238, 2); font-size: 50%; padding-bottom: 5%; font-weight: 750; margin-right: 15%;">Procurar Foto</h2>
 
-      <ion-icon slot="start" name="search" color="primary" size="x-large" ></ion-icon>
+      <ion-icon slot="end" name="search" color="primary" ></ion-icon>
     </ion-button>
   </ion-row>
 
   <ion-list>
-    <ion-item >
-      <ion-col>
-        <ion-row>
-          <h1 class="subtitle">Nome</h1>
-        </ion-row>
-        <ion-row>
-          <ion-input placeholder="Meu Nome" type="text" #name></ion-input>
-        </ion-row>
+    <ion-item > <!--Nome-->
+      <ion-col> 
+        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">Nome</h1>
+        <ion-input placeholder="Meu Nome" type="text" #name></ion-input>   
       </ion-col>
     </ion-item>
+
+    <ion-item > <!--Sobrenome-->
+      <ion-col> 
+        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">Sobrenome</h1>
+        <ion-input placeholder="Esobrenome" type="text" #sobrenme></ion-input>
+      </ion-col>
+    </ion-item>
+
+    <ion-item > <!--CPF-->
+      <ion-col> 
+        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">CPF</h1>
+        <ion-input placeholder="012.345.678-90" type="text" #cpf></ion-input>
+      </ion-col>
+    </ion-item>
+
+    <ion-item > <!--RG-->
+      <ion-col> 
+        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">RG</h1>
+        <ion-input placeholder="9876543210" type="text" #rg></ion-input>
+      </ion-col>
+    </ion-item>
+
+    <ion-item > <!--Celular-->
+      <ion-col> 
+        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">Celular</h1>
+        <ion-input placeholder="53 9 9999-9999" type="text" #celular></ion-input>
+      </ion-col>
+    </ion-item>
+
+    <ion-item > <!--Email-->
+      <ion-col> 
+        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">Email</h1>
+        <ion-input placeholder="seuemail@email.com" type="text" #email></ion-input>
+      </ion-col>
+    </ion-item>
+    
+    
   </ion-list>
 </ion-content>
