@@ -38,7 +38,7 @@ ion-label{
 }
 ion-input{
     
-    --placeholder-color: rgb(250, 238, 2);
+    --placeholder-color: yellow;
     --placeholder-font-weight: 40px;
     --padding-bottom: 1%;
     --color: rgb(250, 238, 2);	
@@ -79,6 +79,19 @@ ion-content{
 ion-list{
     padding-top: 0%;
 }
+ion-checkbox{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+a, link {
+    color: rgb(250, 238, 2); 
+    background-color: transparent; 
+    margin-left: 0.75%;
+    font-size: 60%;
+    margin-top: 4%;
+}
+
 .header-md:after { //bloco que aparecia após o header e teve de ser excluído
     left: 0;
     background-position: left 0 top 0;
