@@ -1,9 +1,50 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+  
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
-  </ion-toolbar>
+
+    <ion-toolbar color="primary">
+      <ion-icon id="seta" lot="start" name="arrow-back" color="secondary"></ion-icon>
+      <ion-title>Cadastrar Serviço</ion-title>
+    </ion-toolbar>
+
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content >
+  <!--Foto-->
+  <img class="foto" src="../../assets/images/perfil.jpg" alt="some text" > 
+
+  <!--Procurar Foto-->
+  <ion-button id ="Foto" size="large" fill="outline">
+    <h1 class="Procurar">Procurar Foto</h1>   
+    <ion-icon name="search" color="primary" ></ion-icon>
+  </ion-button>
+  
+  <div class="btn-group">
+    <button class="btn1">
+      <h1 class="titulo">Categoria do Serviço</h1>
+    </button>
+    <button class="btn_dropdown-toggle" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <!-- dropdown menu links -->
+      <li><a >HTML</a></li>
+      <li><a >CSS</a></li>
+    </ul>
+  </div>
+  <ion-button id ="Salvar" size="large">
+    <h1 class="Salvar">Salvar</h1>
+  </ion-button>
+
+
+  
+
+
+
+  
+</ion-content>

@@ -23,6 +23,6 @@ export class IntroPage implements OnInit {
   go() {
     console.log("aaaaaa");
    // alert("Go");
-    this.router.navigate(['/tabs/tab1']);
+    this.router.navigate(['/feed']);
   }
 }

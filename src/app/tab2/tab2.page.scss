@@ -1,1 +1,87 @@
+ion-content {
+    --ion-background-color: rgb(102, 46, 146);
+   
+}
+
+ion-button#Foto{
+    height: 50px;
+    margin-left: 10px;
+    --border-color: rgb(178, 145, 106);
+    margin-top: 10px;
+    width: 250px;
+}
+
+h1.Procurar{
+    color:rgb(250, 238, 2); 
+    font-size: 60%; 
+    font-weight: 750;
+    margin-bottom: 18px;
+    margin-right: 7%;
+}
+
+img.foto{
+    margin-top: 10px;
+    float: left;
+    height: 50px;
+    margin-left: 15px;
+    width: 70px;
+}
+
+ion-title{
+    float:left;
+    margin-top: 3px;
+    color: #662e92;
+    font-weight: 700;
+}
+//lupa
+ion-icon{ 
+    margin-left: auto;
+    font-size: 30px;
+}
+ion-icon#seta{
+    margin-left: 4%;
+    font-size: 30px;
+    float: left;
+    margin-top: 2px;
+}
+h1.titulo{
+    color: black;
+    font-size: 15px;
+    margin-top: 11px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+button.btn1{
+    width: 279.5px;
+    height: 45px;
+    margin-left: 15px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+button.btn_dropdown-toggle{
+    position: absolute;
+    height: 45px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 50px;
+}
+.btn-group{
+    margin-top: 5px;
+}
+ion-button#Salvar{
+    height: 40px;
+    margin-left: 105px;
+    --border-color: rgb(178, 145, 106);
+    margin-top: 40px;
+    width: 150px;
+}
+
+h1.Salvar{
+    color:#662e92; 
+    font-size: 80%; 
+    font-weight: 750;
+    margin-bottom: 17px;
+    margin-right: 7%;
+    letter-spacing: normal;
+}
 

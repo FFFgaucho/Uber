@@ -1,4 +1,90 @@
-.welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
+ion-title{
+  float:left;
+  margin-top: 3px;
+  color: #662e92;
+  font-weight: 700;
 }
+
+ion-icon{
+  margin-left: 4%;
+  font-size: 175%;
+  float:left;
+  margin-top: 3px;
+}
+ion-content { 
+  --ion-background-color: rgb(102, 46, 146);
+}
+
+ion-col#recuperar{
+  width: 50px;  
+}
+h1.inicio{
+  color:white; 
+  font-size: 80%; 
+  width: 200px;
+  margin-left: 80px;
+  text-align: center;
+  margin-top: 70px;
+}
+ion-input{
+  --placeholder-color: yellow;
+  --placeholder-font-weight: 40px;
+  --padding-bottom: 1%;
+  --color: white;	
+}
+ion-item{
+  --border-color: white;
+  margin-left: 4%;
+  margin-right: 4%;
+  background-color: rgb(181, 186, 182);
+  padding-top: 2.5%;
+  border: 1px solid rgb(181, 186, 182);
+  .inner {
+    background-color: rgb(181, 186, 182);
+  }
+}
+iom-input.inner {
+  background-color: rgb(181, 186, 182);
+}
+.item-native {
+  background-color: rgb(181, 186, 182);
+}
+.input-group{
+  margin-left: 45px;
+  width: 270px;
+  margin-top: 20px;
+
+}
+.input-group input{
+  color: #662E93;
+  background-color: #E2DAE1;
+}
+
+//cor ícone email
+.input-group-addon:first-child {
+  border-right: 0;
+  color: #662E93;
+  background-color: #E2DAE1;  
+}
+.form-control::-webkit-input-placeholder { 
+  color: #662E93; 
+  font-size: 15px;
+  font-weight: bold;
+}
+h1.Recuperar{
+  color: #662e92;
+  font-size: 70%;
+  font-weight: 750;
+  margin-bottom: 17px;
+  
+  letter-spacing: normal;
+}
+ion-button#Recuperar{
+  height: 40px;
+  margin-left: 112.5px;
+  --border-color: rgb(178, 145, 106);
+  margin-top: 30px;
+  width: 135px;
+}
+
+

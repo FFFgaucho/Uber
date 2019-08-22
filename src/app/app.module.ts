@@ -12,11 +12,12 @@ import { FeedPageModule } from './feed/feed.module';
 import { IntroPageModule } from './intro/intro.module';
 import {HttpModule} from '@angular/http';
 import { SearchPipe } from './search.pipe';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent, SearchPipe],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FeedPageModule, IntroPageModule, HttpModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FeedPageModule, IntroPageModule, HttpModule, NgbModule.forRoot()],
   providers: [
     StatusBar,
     SplashScreen,

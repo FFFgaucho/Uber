@@ -4,8 +4,8 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary=yellow de dados pessoais **/
-  --ion-color-primary: #FBED07;
-  --ion-color-primary-rgb: 251, 237, 7;
+  --ion-color-primary: #FBEC08;
+  --ion-color-primary-rgb: 253, 236, 8;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #3171e0;
@@ -84,7 +84,7 @@
 
 
   /*for placeholder**/
-  --text-input-highlight-color-valid:yellow;
+  //--text-input-highlight-color-valid:yellow;
   --text-input-highlight-color-invalid:pink;
   --ion-input-highlight-color-focused: red;
   //--input-highlight-color:green;
@@ -92,6 +92,9 @@
   --ion-padding-bottom:40%;
   --ion-input-placeholder-font-size: 10%;
   --ion-button-border-color:green;
+  --ion-input-placeholder-font-style: arial;
+  --ion-input-placeholder-font-weight: 5px; 
+
   //--ion-input-border-bottom: 5000px;
   //--ion-input-highlight-border-bottom: 10000px;
 }

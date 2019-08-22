@@ -1,7 +1,7 @@
 <ion-header>
 
           <ion-toolbar color="primary">
-            <ion-icon lot="start" name="arrow-back" color="secondary"></ion-icon>
+            <ion-icon id="seta" lot="start" name="arrow-back" color="secondary"></ion-icon>
             <ion-title>Dados Pessoais</ion-title>
           </ion-toolbar>
 
@@ -9,64 +9,79 @@
 
 <ion-content >
     
-    <img class="foto" src="../../assets/images/slide-2.png" alt="some text" height= 150px width= 150px> 
+    <!--Foto-->
+  <img class="foto" src="../../assets/images/perfil.jpg" alt="some text" > 
 
-    <ion-button size="large" fill="outline">
-      <h1 style="color:rgb(250, 238, 2); font-size: 80%; padding-bottom: 5%; font-weight: 750; margin-right: 15%;">Procurar Foto</h1>
-
-      <ion-icon slot="end" name="search" color="primary" ></ion-icon>
-    </ion-button>
+  <!--Procurar Foto-->
+  <ion-button id ="Foto" size="large" fill="outline">
+    <h1 class="Procurar">Procurar Foto</h1>   
+    <ion-icon slot="end" name="search" color="primary" ></ion-icon>
+  </ion-button>
   
-
+  <!--Formulário-->
   <ion-list>
     <ion-item > <!--Nome-->
       <ion-col> 
-        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">Nome</h1>
+        <h1 class="titulo">Nome</h1>
         <ion-input placeholder="Meu Nome" type="text" #name></ion-input>   
       </ion-col>
     </ion-item>
 
     <ion-item > <!--Sobrenome-->
       <ion-col> 
-        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">Sobrenome</h1>
+        <h1 class="titulo">Sobrenome</h1>
         <ion-input placeholder="Esobrenome" type="text" #sobrenme></ion-input>
       </ion-col>
     </ion-item>
 
     <ion-item > <!--CPF-->
       <ion-col> 
-        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">CPF</h1>
+        <h1 class="titulo">CPF</h1>
         <ion-input placeholder="012.345.678-90" type="text" #cpf></ion-input>
       </ion-col>
     </ion-item>
 
     <ion-item > <!--RG-->
       <ion-col> 
-        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">RG</h1>
+        <h1 class="titulo">RG</h1>
         <ion-input placeholder="9876543210" type="text" #rg></ion-input>
       </ion-col>
     </ion-item>
 
     <ion-item > <!--Celular-->
       <ion-col> 
-        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">Celular</h1>
+        <h1 class="titulo">Celular</h1>
         <ion-input placeholder="53 9 9999-9999" type="text" #celular></ion-input>
       </ion-col>
     </ion-item>
 
     <ion-item > <!--Email-->
       <ion-col> 
-        <h1 style="color:white; font-size: 60%; margin-top: auto; margin-bottom: 2%;">Email</h1>
+        <h1 class="titulo">Email</h1>
         <ion-input placeholder="seuemail@email.com" type="text" #email></ion-input>
       </ion-col>
     </ion-item>  
   
   </ion-list>
-  <ion-row>
-    
+  <!--Declaro que li-->
+  <ion-row id="teste"> 
       <ion-checkbox color="primary"></ion-checkbox>
-    
-      <h1 style="color:white; font-size: 60%; margin-left: 2.5%; margin-top: 4.25%; ">Declaro que li e aceito os </h1>
+      <h1 class="declaro">Declaro que li e aceito os </h1>
       <a href="https://www.w3schools.com/html/">Termos de Uso</a>
   </ion-row>
+  
+  
+  <!--Botão Salvar-->
+  <ion-row id="gota">
+    <img class="gota" src="../../assets/images/logo_colorido.png" alt="some text" >
+    <ion-button id ="Salvar" size="large">
+      <h1 class="Salvar">Salvar</h1>
+    </ion-button>
+
+  </ion-row>
+
+  <ion-row>
+
+  </ion-row>
+
 </ion-content>

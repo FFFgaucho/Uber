@@ -1,19 +1,30 @@
 ion-content {
     --ion-background-color: rgb(102, 46, 146);
 }
-/*
-ion-header{
-   background-color: rgb(250, 238, 2);
-}*/
 
-ion-toolbar{
-    background-color: blue;
+ion-button#Foto{
+    height: 50px;
+    margin-left: 10px;
+    --border-color: rgb(178, 145, 106);
+    margin-top: 65px;
+    width: 200px;
 }
 
-img, foto{
+h1.Procurar{
+    color:rgb(250, 238, 2); 
+    font-size: 60%; 
+    font-weight: 750;
+    margin-bottom: 18px;
+    margin-right: 7%;
+}
+
+img.foto{
     margin-top: 15px;
     float: left;
-    margin-left: 40px;
+    height: 100px;
+    margin-left: 34.5px;
+    width: 100px;
+    border-radius: 5px;
 }
 
 ion-title{
@@ -23,24 +34,25 @@ ion-title{
     font-weight: 700;
 }
 
-h1, subtitle {
-    color:white;
-    font-size: 80%;
-}
-
 ion-icon{
     margin-left: 4%;
     font-size: 175%;
     float:left;
 }
-
-ion-label{
-    color: #662e92;
+ion-icon#seta{
     margin-left: 4%;
-    font-size: 100%;
-    font-weight: 800;
-    margin-top: 5.5%;
+    font-size: 175%;
+    float:left;
 }
+h1.titulo{
+    color: white;
+    font-size: 60%;
+    margin-top: auto;
+    font-weight: 500;
+    margin-bottom: 2%;
+    margin-right: 0%;
+}
+
 
 ion-input{
     --placeholder-color: yellow;
@@ -55,22 +67,6 @@ ion-item{
     margin-right: 4%;
     padding-top: 2.5%;
 }
-
-ion-img{
-    width: 27%;
-    margin-left: 8%;
-    height: 105%;
-}
-
-ion-button{
-    height: 70px;
-    margin-left: 20px;
-    --border-color: rgb(178, 145, 106);
-    margin-top: 96px;
-    width: 300px;
-}
-
-
 
 ion-col{
     padding-top: 1%;
@@ -89,6 +85,26 @@ ion-checkbox{
     margin-top: 3%;
 }
 
+ion-row#teste a{
+    height: 10px;
+    width: 65px;
+}
+ion-row#gota{
+    height: 120px;
+    //width: 65px;
+}
+ion-row#espaço{
+    height: 50px;
+    width: 65px;
+}
+
+h1.declaro{
+    color:white; 
+    font-size: 60%; 
+    margin-left: 2.5%;
+    margin-top: 4.25%;
+}
+
 a, link {
     color: rgb(250, 238, 2); 
     background-color: transparent; 
@@ -97,16 +113,44 @@ a, link {
     margin-top: 4%;
 }
 
-.header-md:after { //bloco que aparecia após o header e teve de ser excluído
-    left: 0;
-    background-position: left 0 top 0;
-    position: absolute;
-    width: 100%;
-    height: 0px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAIBAMAAAACWGKkAAAAFVBMV…AAAB9JREFUCNdjEIQCBiUoYDCGAgYXKGAIhQKGNChgwAAAorMLKSCkL40AAAAASUVORK5CYII=);
-    background-repeat: repeat-x;
-    content: "";
-}
 .sc-ion-input-md-h { //tira espaço entre nome e placeholder 
     --padding-top: 0px;
+}
+
+ion-button#Salvar{
+    height: 40px;
+    margin-left: 105px;
+    --border-color: rgb(178, 145, 106);
+    margin-top: 40px;
+    width: 150px;
+}
+img.gota{
+    float: left;
+    height: 50px;
+    position: absolute;
+    margin-left: 242px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+img.gota2{
+    float: left;
+    height: 15px;
+    margin-left: auto;
+    width: 30px;
+    border-radius: 5px;
+}
+ion-col#col-fim{
+    padding-top: 1%;
+}
+ion-col#col-salvar{
+    padding-top: 1%;
+}
+h1.Salvar{
+    color:#662e92; 
+    font-size: 80%; 
+    font-weight: 750;
+    margin-bottom: 17px;
+    margin-right: 7%;
+    letter-spacing: normal;
 }
