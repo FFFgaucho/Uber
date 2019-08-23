@@ -1,9 +1,4 @@
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
+
   
 <ion-header>
 
@@ -24,27 +19,19 @@
     <ion-icon name="search" color="primary" ></ion-icon>
   </ion-button>
   
-  <div class="btn-group">
-    <button class="btn1">
-      <h1 class="titulo">Categoria do Serviço</h1>
-    </button>
-    <button class="btn_dropdown-toggle" data-toggle="dropdown">
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-      <!-- dropdown menu links -->
-      <li><a >HTML</a></li>
-      <li><a >CSS</a></li>
-    </ul>
-  </div>
+  <ion-item>  
+    <ion-label>Categoria do Serviço</ion-label>
+    <ion-select multiple="true" cancelText="Cancelar" okText="Ok">
+      <ion-select-option value="conserto">Conserto</ion-select-option>
+      <ion-select-option value="construcao">Construção</ion-select-option>
+      <ion-select-option value="domestico">Doméstico</ion-select-option>
+      <ion-select-option value="outro">Outro</ion-select-option>
+    </ion-select>
+  </ion-item> 
+ 
+ 
   <ion-button id ="Salvar" size="large">
     <h1 class="Salvar">Salvar</h1>
   </ion-button>
 
-
-  
-
-
-
-  
 </ion-content>

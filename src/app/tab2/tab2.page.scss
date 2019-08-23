@@ -1,8 +1,6 @@
 ion-content {
     --ion-background-color: rgb(102, 46, 146);
-   
 }
-
 ion-button#Foto{
     height: 50px;
     margin-left: 10px;
@@ -33,11 +31,33 @@ ion-title{
     color: #662e92;
     font-weight: 700;
 }
+ion-label{
+    //background-color: red;
+    font-weight: bolder;
+}
+
+ion-item{
+    --border-color: white;
+    margin-left: 16px;
+    --ion-background-color: whitesmoke;
+    margin-right: 16px;
+    padding-top: 2.5%;
+    --border-radius: 2px;
+}
+ion-select{
+    width:100px;
+    color: black;
+}
+ion-select, cancelText{
+    color: black;
+}
+
 //lupa
 ion-icon{ 
     margin-left: auto;
     font-size: 30px;
 }
+
 ion-icon#seta{
     margin-left: 4%;
     font-size: 30px;
@@ -50,23 +70,6 @@ h1.titulo{
     margin-top: 11px;
     font-weight: bold;
     margin-right: 40px;
-}
-button.btn1{
-    width: 279.5px;
-    height: 45px;
-    margin-left: 15px;
-    border-bottom-left-radius: 2px;
-    border-top-left-radius: 2px;
-}
-button.btn_dropdown-toggle{
-    position: absolute;
-    height: 45px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    width: 50px;
-}
-.btn-group{
-    margin-top: 5px;
 }
 ion-button#Salvar{
     height: 40px;

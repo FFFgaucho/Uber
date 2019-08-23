@@ -78,23 +78,16 @@
   /**Background **/
   --ion-background-color: white;
 
-  /**Margin **/
-  //--ion-margin-left:100%;
-  //--ion-padding:30%;
 
-
-  /*for placeholder**/
-  //--text-input-highlight-color-valid:yellow;
   --text-input-highlight-color-invalid:pink;
   --ion-input-highlight-color-focused: red;
-  //--input-highlight-color:green;
-  //--text-input-md-highlight-color:blue;
   --ion-padding-bottom:40%;
   --ion-input-placeholder-font-size: 10%;
   --ion-button-border-color:green;
   --ion-input-placeholder-font-style: arial;
-  --ion-input-placeholder-font-weight: 5px; 
-
+  --placeholder-font-weight: 5px;
+  
+  --border-radius: 5px;
   //--ion-input-border-bottom: 5000px;
   //--ion-input-highlight-border-bottom: 10000px;
 }
